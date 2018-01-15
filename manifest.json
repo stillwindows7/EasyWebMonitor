@@ -1,0 +1,22 @@
+{
+  "name": "monitor",
+  "description": "uv monitor",
+  "version": "0.6",
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": ["contextMenus","http://en.280i.cn/*"],
+  "content_scripts": [
+    {
+      "matches": ["http://*/*"],
+      "js": ["jquery.min.js","content.js"]
+    }
+  ],
+  "options_page": "options.html",
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_title": "setting",
+    "default_popup": "popup.html"
+  },
+  "manifest_version": 2
+}

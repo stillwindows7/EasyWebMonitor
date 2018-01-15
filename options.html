@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+    <title>setting</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: http://en.280i.cn 'unsafe-eval'; style-src 'self' 'unsafe-inline'; script-src 'self' http://en.280i.cn/ 'unsafe-inline' 'unsafe-eval';  media-src *">
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        .wrap{
+            padding-top:60px;
+            width:600px;
+            margin:0 auto;
+        }
+        .wrap .row{
+            text-align:center;
+            margin-bottom:20px;
+        }
+        .wrap .row label,.wrap .row input,.wrap .row button{
+            display:inline-block;
+        }
+        .wrap .row input{
+            padding:4px 0;
+            margin:0 4px;
+        }
+        .wrap .row button{
+            margin:0 3px;
+            border:none;
+            color:#fff;
+            background: green;;
+            width:80px;
+            text-align:center;
+            padding:6px 0;
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <div class="row">
+        <label>当前状态：</label>
+        <span id="status"></span>
+    </div>
+    <div class="row">
+        <label>最大排队人数:</label>
+        <input id="count" type="number"/>
+        <button id="save_btn">保存</button>
+    </div>
+    <div class="row">
+        <button id="start_btn">启用</button>
+        <button id="stop_btn">停用</button>
+    </div>
+</div>
+<script src="jquery.min.js"></script>
+<script src="options.js"></script>
+</body>
+</html>
